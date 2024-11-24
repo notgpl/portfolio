@@ -19,7 +19,7 @@ html {
 /* Background Image */
 body {
     background-color: #000; 
-    background-image: url('C:/Users/GodGpl/OneDrive/Desktop/Portfolio/main2.jpg');
+    background-image: url('/main2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
