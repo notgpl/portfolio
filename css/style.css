@@ -19,7 +19,7 @@ html {
 /* Background Image */
 body {
     background-color: #000; 
-    background-image: url('/main2.jpg');
+    background-image: url('C:/Users/GodGpl/OneDrive/Desktop/Portfolio/main2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -162,4 +162,29 @@ span {
     .home-box {
         width: 95%; /* Adjust box width */
     }
+}
+
+/* Music Toggle Button */
+.music-toggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.music-toggle i {
+    pointer-events: none;
 }
