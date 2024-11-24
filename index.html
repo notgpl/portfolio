@@ -20,29 +20,41 @@
     <!-- Start Main -->
     <section class="home">
         <!-- Box -->
-        <div class="home-box" data-aos="fade-in" data-tilt>
+        <div class="home-box" data-aos="fade-in">
+            <!-- Music Button -->
+            <button class="music-toggle" id="music-toggle">
+                <i class="fas fa-play"></i>
+            </button>
+
             <!-- Profile Image -->
             <div class="home-img">
-                <img src="main.jpg" alt="Profile Image">
+                <img src="C:/Users/GodGpl/OneDrive/Desktop/Portfolio/main.jpg" alt="Profile Image">
             </div>
             <!-- Main Content -->
             <div class="particle-container">
-            <div class="home-content" >
-                <h1>Hey there</h1><div></div><h1>I'm, <span>NotGpl</span></h1> 
-                <p>Gamer | Developer</p>
-                <!-- Social Icons -->
-                <div class="social-icons">
-                    <a href="https://github.com/NotGpl"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://youtube.com/c/Gamerprolivexd"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://threads.net/not_adarshxd"><i class="fa-brands fa-threads"></i></a>
-                    <a href="https://instagram.com/not_adarshxd"><i class="fa-brands fa-instagram"></i></a>
+                <div class="home-content">
+                    <h1>Hey there</h1>
+                    <div></div>
+                    <h1>I'm, <span>NotGpl</span></h1> 
+                    <p>Gamer | Developer</p>
+                    <!-- Social Icons -->
+                    <div class="social-icons">
+                        <a href="https://github.com/NotGpl"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://youtube.com/c/Gamerprolivexd"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://threads.net/not_adarshxd"><i class="fa-brands fa-threads"></i></a>
+                        <a href="https://instagram.com/not_adarshxd"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <!-- Contact Button -->
+                    <a href="" class="btn">CONTACT</a>
                 </div>
-                <!-- Contact Button -->
-                <a href="" class="btn">CONTACT</a>
             </div>
         </div>
-    
-    <!-- End Main -->
+    </section>
+
+    <!-- Background Music -->
+    <audio id="background-music" loop>
+        <source src="https://r2.guns.lol/eee98a40-a425-4885-983b-6d65e417e363.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- AOS Script -->
     <script src="js/aos.js"></script>
@@ -51,17 +63,34 @@
             duration: 1000, 
             once: true
         });
-    </script>
-    <!-- Titlt -->
-    <script>
-    if (typeof VanillaTilt !== 'undefined') {
-        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-            max: 20,
-            speed: 300,
-            glare: true,
-            "max-glare": 0.1
+
+        // Music Toggle Button
+        const audio = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+
+        musicToggle.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                musicToggle.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                audio.pause();
+                musicToggle.innerHTML = '<i class="fas fa-play"></i>';
+            }
         });
-    }
+    
+    </script>
+    
+
+    <!-- Vanilla Tilt -->
+    <script>
+        if (typeof VanillaTilt !== 'undefined') {
+            VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+                max: 20,
+                speed: 300,
+                glare: true,
+                "max-glare": 0.1
+            });
+        }
     </script>
      <!--  Tilt.js file     -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
