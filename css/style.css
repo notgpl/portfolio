@@ -188,3 +188,13 @@ span {
 .music-toggle i {
     pointer-events: none;
 }
+@media (max-width: 480px) {
+    section.home {
+        flex-direction: column; /* Stack boxes on smaller screens */
+        gap: 2rem;
+    }
+
+    .home-box {
+        width: 60%; /* Adjust box width */
+    }
+}
