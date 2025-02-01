@@ -190,11 +190,13 @@ span {
 }
 @media (max-width: 480px) {
     section.home {
-        flex-direction: column; /* Stack boxes on smaller screens */
-        gap: 2rem;
+        
+    }
+    .home-img img {
+        width: 60%;
     }
 
     .home-box {
-        width: 60%; /* Adjust box width */
+        width: 95%; /* Adjust box width */
     }
 }
