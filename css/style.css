@@ -201,9 +201,9 @@ span {
         width: 98%; /* Adjust box width */
     }
     .social-icons a {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin: 1rem;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.5rem;
     }
     
 }
