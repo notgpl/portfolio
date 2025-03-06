@@ -135,12 +135,13 @@ span {
     padding: 1rem 2.8rem;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: rgb(0, 0, 0);
     letter-spacing: 0.3rem;
     font-weight: 600;
     border: 2px solid transparent;
     transition: 0.3s ease;
+    gap: 5px;
     cursor: pointer;
     box-shadow: 0 0 8px #ffffff;
     text-shadow: 0 0 7px #ffffff;
