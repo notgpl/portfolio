@@ -19,7 +19,7 @@ html {
 /* Background Image */
 body {
     background-color: #000; 
-    background-image: url('/main2.webp');
+    background-image: url('/images.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@ section.home {
 
 /* Content inside the Box */
 .home-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.5;
     color: #f7f3f3;
